@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>04. User Input</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+<ul>
+    <li>
+        <click-me>Loading...</click-me>
+    </li>
+    <li>請輸入：
+        <key-up1>Loading...</key-up1>
+    </li>
+    <li>請輸入：
+        <key-up2>Loading...</key-up2>
+    </li>
+    <li>輸入完畢後按下 ENTER 鍵：
+        <key-up3>Loading...</key-up3>
+    </li>
+    <li>輸入完畢後不需按下 ENTER 鍵，滑鼠點擊它處：
+        <key-up4>Loading...</key-up4>
+    </li>
+</ul>
+</body>
+</html>
